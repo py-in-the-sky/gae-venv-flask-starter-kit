@@ -12,4 +12,6 @@ source venv/bin/activate
 bash manage_pip_packages.sh
 ```
 
-The script manage_pip_packages.sh will be useful throughout the development of your project as it will help to keep your pip-installed Python packages, your requirements.txt file, and your App Engine project's directory for third-party Python packages (app/gae_env) in sync.  Whenever you manually pip install a package, cd into the project's root directory and run this script.
+At this point, you should be ready to run your app in your local dev environment, visit the page, and see the hello-world message.  To deploy your app, just change the first line of app/app.yaml (i.e., "application: your-app-id") to reflect your own app ID.  Then you can deploy, visit <your app ID>.appspot.com and see the hello-world message.  Now you're ready to start working on your app without having to worry about all the housekeeping involved in incorporating new third-party Python libraries into your App-Engine app.
+
+The script manage_pip_packages.sh will be useful throughout the development of your project as it will help to keep your pip-installed Python packages, your requirements.txt file, and your App Engine project's directory for third-party Python packages (app/gae_env) in sync.  Whenever you manually pip-install a package, cd into the project's root directory and run this script.  And that's all you have to do to manage incorporating new third-party Python libraries into your App-Engine app.
