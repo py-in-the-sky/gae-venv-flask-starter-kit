@@ -6,10 +6,10 @@ This project is currently set up for OSX and Linux.  Please feel free to adapt i
 
 To get started, clone this repo.  Then cd into the root directory of the project.  Then run the following from the command line; the first two lines aren't required but are recommended:
 
-'''bash
+```bash
 virtualenv venv
 source venv/bin/activate
 bash manage_pip_packages.sh
-'''
+```
 
 The script manage_pip_packages.sh will be useful throughout the development of your project as it will help to keep your pip-installed Python packages, your requirements.txt file, and your App Engine project's directory for third-party Python packages (app/gae_env) in sync.  Whenever you manually pip install a package, cd into the project's root directory and run this script.
